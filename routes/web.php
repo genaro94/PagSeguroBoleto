@@ -10,7 +10,7 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/boleto_action', 'PagSeguroController@action_boleto')->name('boleto_action');
